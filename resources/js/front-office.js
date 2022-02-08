@@ -1,7 +1,7 @@
 import Vue from "vue";
-import app from './views/App';
+import App from './views/App';
 
 const root = new Vue({
     el: '#root',
-    render: h > h(App),
+    render: h => h(App),
 })

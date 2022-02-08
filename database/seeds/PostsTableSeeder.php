@@ -13,12 +13,12 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        for ($i=0; $i < 3; $i++) { 
+        for ($i=0; $i < 8; $i++) { 
             $new_post = new Post();
 
             $new_post->title = 'Post title' . ($i + 1);
-            $new_post->slug - Str::slug($new_post->title, '-');
-            $new_post->content = 'lorem ipsum dolore ipsum doloreipsum doloreipsum dolore';
+            $new_post->slug = Str::slug($new_post->title, '-');
+            $new_post->content = 'lorem ipsum dolo';
 
             $new_post->save();
         }
