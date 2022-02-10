@@ -19,7 +19,6 @@ class PostsTableSeeder extends Seeder
             $new_post->title = 'Post title' . ($i + 1);
             $new_post->slug = Str::slug($new_post->title, '-');
             $new_post->content = 'lorem ipsum dolo';
-
             $new_post->save();
         }
     }
